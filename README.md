@@ -56,8 +56,6 @@ BINANCE_API_KEY=your_api_key_here
 BINANCE_API_SECRET=your_api_secret_here
 ```
 
-> ⚠️ Never commit your `.env` file. It's already in `.gitignore`.
-
 ---
 
 ## How to Run
@@ -115,10 +113,3 @@ Each log entry includes timestamp, log level, and full request/response details.
 
 ---
 
-## Assumptions
-
-- All trades are on **Binance Futures Testnet** (USDT-M perpetual contracts)
-- Base URL: `https://testnet.binancefuture.com`
-- Limit orders use `timeInForce=GTC` (Good Till Cancel) by default
-- Quantity precision depends on the symbol (testnet is lenient)
-- No leverage configuration is included (testnet default is used)
